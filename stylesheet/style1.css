@@ -1,0 +1,71 @@
+body{
+ padding: 40px;
+ font-family: Aria;
+ background-color: teal;
+}
+h1{
+ font-size: 75px;
+}
+.container{
+ background-color: aqua;
+ padding: 30px;
+ border: 2px solid teal;
+ border-radius: 20px;
+}
+.container figure{
+ text-align: center;
+ font-weight: bold;
+ font-size: 20px;
+}
+.container img{
+ border-radius: 20px;
+}
+.nav-section{
+ background-color: coral;
+ border-radius: 20px;
+ padding: 15px;
+ margin-top: 30px;
+ text-align: center;
+}
+.nav{
+ border-radius: 20px;
+ width: 300px;
+ text-align: center;
+ margin: 0 auto;
+}
+.nav a{
+ padding: 3px;
+ text-decoration: none;
+ border: 2px solid;
+ margin-top: 30px;
+ font-size: 30px;
+ border-radius: 10px;
+ margin-right: 5px;
+}
+nav a:hover{
+ background-color: grey;
+ color: gold;
+}
+#about h2{
+ font-weight: bold;
+ font-size: 30px;
+ text-decoration: underline;
+}
+#about p{
+ font-size: 20px;
+ font-weight: semi bold;
+}
+#posts h2{
+ font-weight: bold;
+ font-size: 30px;
+ text-decoration: underline;
+}
+#posts h3{
+ font-weight: bold;
+ font-size: 25px;
+}
+#posts p{
+ font-size: 20px;
+ font-weight: semi bold;
+ color: white;
+}

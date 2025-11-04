@@ -1,0 +1,67 @@
+body{
+ font-family: arial, sans-serif;
+ padding: 40px;
+ text-align: center;
+ background-color: magenta;
+}
+.container{
+ background-color: white;
+ max-width: 400px;
+ padding: 40px;
+ margin: 0 auto;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px gray;
+}
+.container:hover{
+ background-color: khaki;
+}
+h1::before{
+ content: "👋 "
+}
+h1::after{
+ content: " 🖐"
+}
+.information{
+ font-size: 1.2em;
+ color: grey;
+ margin-bottom: 20px;
+}
+.links{
+ margin-top: 20px;
+ display: flex;
+ justify-content: space-around;
+}
+.links a{
+ text-decoration: none;
+ font-size: 1em;
+ padding: 10px 20px;
+ border-radius: 5px;
+ color: white;
+ background-color: midnightblue;
+}
+.links a:hover{
+ background-color: green;
+}
+.links a:active{
+ background-color: red;
+}
+.links a:visited{
+ background-color: crimson;
+}
+.links a:focus{
+ outline: 2px solid black;
+}
+.links a:hover{
+ background-color: green;
+}
+section{
+ margin: 20px auto;
+ max-width: 600px;
+ background-color: whitesmoke;
+ padding: 20px;
+ border-radius: 10px;
+ display: none;
+}
+section:target{
+ display: block;
+}
