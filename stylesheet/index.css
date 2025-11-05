@@ -1,5 +1,5 @@
 body{
- background: radial-gradient(ellipse at top, purple 50%, black);
+ background: radial-gradient(ellipse at top left, purple 50%, black);
  padding: auto;
  text-align: center;
  font-family: Arial;
@@ -32,7 +32,7 @@ a{
 a:hover{
  background-color: deepskyblue;
  display: inline-block;
- transform: scale(1);
+ transform: scale(1.1,1.2);
 }
 a:active{
  background-color: seagreen;
