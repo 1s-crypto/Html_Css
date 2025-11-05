@@ -1,27 +1,29 @@
 body{
- padding: 40px;
+ padding: 1.8rem;
  font-family: Aria;
  background-color: teal;
 }
 h1{
- font-size: 75px;
+ font-size: 4.7rem;
 }
 .container{
  background-color: aqua;
- padding: 30px;
+ padding: 0.5rem;
  border: 2px solid teal;
- border-radius: 20px;
+ border-radius: 1.25rem;
 }
 .container figure{
  text-align: center;
  font-weight: bold;
- font-size: 20px;
+ font-size: 1.8rem;
 }
 .container img{
- border-radius: 20px;
+ border-radius: 1.5rem;
+ height: auto;
+ width: 40%;
 }
 .nav-section{
- background-color: coral;
+ background-color: cadetblue;
  border-radius: 20px;
  padding: 15px;
  margin-top: 30px;
@@ -34,13 +36,13 @@ h1{
  margin: 0 auto;
 }
 .nav a{
- padding: 3px;
+ padding: 0.2rem;
  text-decoration: none;
  border: 2px solid;
- margin-top: 30px;
- font-size: 30px;
+ margin-top: 1.8rem;
+ font-size: 1.8rem;
  border-radius: 10px;
- margin-right: 5px;
+ margin-right: 0.3rem;
 }
 nav a:hover{
  background-color: grey;
@@ -48,24 +50,24 @@ nav a:hover{
 }
 #about h2{
  font-weight: bold;
- font-size: 30px;
+ font-size: 1.9rem;
  text-decoration: underline;
 }
 #about p{
- font-size: 20px;
+ font-size: 1.2rem;
  font-weight: semi bold;
 }
 #posts h2{
  font-weight: bold;
- font-size: 30px;
+ font-size: 1.9rem;
  text-decoration: underline;
 }
 #posts h3{
  font-weight: bold;
- font-size: 25px;
+ font-size: 1.5rem;
 }
 #posts p{
- font-size: 20px;
+ font-size: 1.2rem;
  font-weight: semi bold;
  color: white;
 }

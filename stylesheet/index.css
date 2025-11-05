@@ -7,7 +7,7 @@ body{
 .container{
  color: plum;
  width: 250px;
- height: 200px;
+ height: auto;
  margin: 80px auto;
  background-color: lavender;
  padding: 30px;
