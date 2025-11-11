@@ -1,0 +1,33 @@
+*{
+ box-sizing: border-box;
+}
+body{
+ padding: 20px;
+ text-transform: uppercase;
+ font-family: cursive;
+ background: radial-gradient(circle, plum, thistle);
+ text-align: center;
+ font-weight: bold;
+ font-size: 50px;
+}
+.container{
+ background: lavender;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ width: 400px;
+ padding: 15px;
+ gap: 20px;
+ margin: 0 auto;
+ border-radius: 20px;
+ align-items: center;
+}
+img{
+ width: 50%;
+ height: 40%;
+ border-radius: 10px;
+ box-shadow: 4px 4px 10px 5px grey;
+}
+.container img:hover{
+ transform: translate(10px, 30px) rotate(-5deg) skew(-5deg, -5deg);
+}

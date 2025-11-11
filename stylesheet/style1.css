@@ -1,50 +1,61 @@
 html{
  font-size: 16px;
 }
+*{
+ box-sizing: border-box;
+}
 body{
  padding: 1.8rem;
  font-family: Aria;
- background-color: teal;
+ background-color: dodgerblue;
 }
 h1{
  font-size: 4.7rem;
+ font-family: brush script mt;
+ font-weight: semi bold;
 }
 .container{
- background-color: aqua;
- padding: 0.5rem;
- border: 2px solid teal;
  border-radius: 1.25rem;
+ width: 100%;
+ height: auto;
+ margin: 0 auto;
 }
 .container figure{
  text-align: center;
  font-weight: bold;
- font-size: 1.8em;
+ font-style: italic;
+ font-size: 1em;
+ margin-bottom: 5px;
 }
 .container img{
- border-radius: 1.5rem;
- height: auto;
- width: 100%;
+ border-radius: 0.4em;
+ width: 90%;
 }
 .nav-section{
- background-color: cadetblue;
  border-radius: 20px;
- padding: 15px;
- margin-top: 30px;
- text-align: center;
+ margin: 20px auto;
+ padding: 0.5em;
+ width: 110%;
+ display: flex;
+ justify-content: center;
 }
 .nav{
+ background: cornflowerblue;
+ padding: 0.5em;
  border-radius: 20px;
  width: 90%;
- margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 10px;
 }
 .nav a{
- padding: 0.2em;
+ padding: 0.1em;
  text-decoration: none;
  border: 0.1em solid;
- margin-top: 0.3em;
+ font-family: Arial;
  font-size: 1.8em;
  border-radius: 0.5em;
- margin-right: 0.3em;
 }
 nav a:hover{
  background-color: grey;
@@ -58,6 +69,7 @@ nav a:hover{
 #about p{
  font-size: 1.2rem;
  font-weight: semi bold;
+ color: white;
 }
 #posts h2{
  font-weight: bold;
@@ -72,4 +84,70 @@ nav a:hover{
  font-size: 1.2rem;
  font-weight: semi bold;
  color: white;
+}
+.form h2{
+ font-family: Arial;
+ font-style: italic;
+}
+#user{
+ font-family: Arial;
+ font-weight: bold;
+}
+.form input[type="text"]{
+ width: 250px;
+ height: 30px;
+}
+.form input[type="text"]:focus{
+ outline: 1px solid green;
+ background: deepskyblue;
+}
+.form input[type="text"]:hover{
+ background: lime;
+ cursor: pointer;
+}
+.form legend{
+ font-family: Arial;
+ font-weight: semi bold;
+}
+.form label{
+ font-family: Arial;
+ font-weight: semi bold;
+ vertical-align: middle;
+ margin-top: 1000px;
+}
+.form input[type="radio"]{
+ appearance: none;
+ width: 15px;
+ height: 15px;
+ background: white;
+ border-radius: 5px;
+ border: 1px solid black;
+ vertical-align: middle;
+}
+.form input[type="radio"]:checked{
+ cursor: pointer;
+ background: deepskyblue;
+ border: 1px solid black;
+}
+.form input[type="radio"]:hover{
+ cursor: pointer;
+ background: limegreen;
+ border: 1px solid black;
+}
+.form input[type="radio"]:focus{
+ outline: 1px solid white;
+}
+.form input[type="radio"]:checked::after{
+ content: "✔";
+ line-height: 1px;
+ text-align: right;
+}
+.form button{
+ border: 2px solid;
+ background: royalblue;
+ margin-left: 2px;
+ font-size: 1em;
+}
+form button:hover{
+ background: skyblue;
 }

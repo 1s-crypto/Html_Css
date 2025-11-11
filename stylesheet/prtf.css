@@ -1,18 +1,22 @@
+html{
+ font-size: 16px;
+}
+*{
+ box-sizing: border-box;
+}
 body{
- padding: 40px;
  background: linear-gradient(180deg, darkgray, gray);
- font-family: Brush Script MT;
+ font-family: "Brush Script MT";
 }
 .heading h1{
  text-align: center;
  font-size: 4.7rem;
  margin-bottom: 5rem;
+ font-family: 'my font', arial;
 }
 .heading figure{
- background-color: lightgray;
  text-align: center;
  border-radius: 0.9rem;
- width: 31.25rem;
  margin: 0 auto;
  font-size: 1.2rem;
 }
@@ -46,10 +50,8 @@ body{
  padding: 0.2rem;
  list-style: inside;
 }
-.projects a{
- text-decoration: none;
- background-color: dimgray;
- border: 1px solid gray;
+.projects a:not(soon){
+ text-decoration: underline dashed blue;
  padding: 0.2rem;
  font-weight: bold;
 }
@@ -61,44 +63,38 @@ body{
  text-decoration: underline solid;
  text-align: center;
 }
-.form{
- text-align: center;
-}
 .form form{
  margin: 0 auto;
  background-color: grey;
  padding: 1.9rem;
  border-radius: 20px;
- width: 80%;
+ width: 70%;
 }
 .form label{
  font-weight: bold;
  font-size: 2rem;
- margin-right: 15rem;
- margin-bottom: 0;
+ text-align: right;
 }
 .form input{
- width: 90%;
- height: auto;
+ width: 85%;
+ height: 30px;
  font-weight: bold;
  font-size: 1rem;
- border-radius: 10px;
- border: 2px solid grey;
- margin-top: 0;
+ margin: 0;
 }
 .form input:hover{
- background-color: magenta;
+ background-color: linen;
 }
 .form button{
  font-weight: bold;
- width: 60%;
+ width: 50%;
  margin-top: 10px;
- height: auto;
- font-size: 1rem;
- border-radius: 1.8rem;
+ height: 50%;
+ font-size: 1em;
+ border-radius: 1em;
 }
 .form button:hover{
- background-color: gold;
+ background-color: darkgray;
 }
 .footer h2{
  text-align: center;

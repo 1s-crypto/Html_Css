@@ -31,8 +31,7 @@ a{
 }
 a:hover{
  background-color: deepskyblue;
- display: inline-block;
- transform: scale(1.1,1.2);
+ transform: rotate(-5deg);
 }
 a:active{
  background-color: seagreen;
