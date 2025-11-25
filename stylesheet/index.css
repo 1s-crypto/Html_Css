@@ -37,7 +37,7 @@ body{
 .container a:visited{
     color: blueviolet;
 }
-@media (max-width: 350px){
+@media (max-width: 370px){
     body{
         display: flex;
         justify-content: left;
