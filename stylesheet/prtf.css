@@ -1,0 +1,150 @@
+html{
+ font-size: 16px;
+}
+*{
+ box-sizing: border-box;
+}
+body{
+ background: linear-gradient(180deg, darkgray, gray);
+ font-family: "Brush Script MT";
+}
+.heading h1{
+ text-align: center;
+ font-size: 4.7rem;
+ margin-bottom: 5rem;
+ font-family: 'my font', arial;
+}
+.heading figure{
+ text-align: center;
+ border-radius: 0.9rem;
+ margin: 0 auto;
+ font-size: 1.2rem;
+}
+.heading img{
+ border-radius: 20px;
+ margin-top: 1.2rem;
+}
+.heading p{
+ padding: 1rem;
+ font-size: 1.2rem;
+ font-family: Times new roman;
+}
+.projects h2{
+ font-size: 2rem;
+ text-decoration: underline solid;
+ text-align: center;
+}
+.projects p{
+ font-size: 1.3rem;
+}
+.projects h3{
+ font-size: 1.5rem;
+ text-decoration: underline solid;
+}
+#ol, .projects ul{
+ background-color: silver;
+ padding: 0.2rem;
+}
+.projects li{
+ margin: 0.6rem;
+ padding: 0.2rem;
+ list-style: inside;
+}
+#ol li{
+ list-style-type: none;
+}
+.projects a{
+ text-decoration: none;
+ padding: 0.2rem;
+ font-weight: bold;
+}
+.projects a:hover{
+    color: green;
+    outline: 2px solid yellow;
+}
+.projects a:visited{
+    color: red;
+}
+#soon{
+ text-decoration: none;
+}
+.projects a:hover{
+ background-color: snow;
+}
+.form h2{
+ font-size: 2rem;
+ text-decoration: underline solid;
+ text-align: center;
+}
+.form form{
+ margin: 0 auto;
+ background-color: grey;
+ padding: 1.9rem;
+ border-radius: 20px;
+ width: 70%;
+}
+.form label{
+ font-weight: bold;
+ font-size: 2rem;
+ text-align: right;
+}
+.form input{
+ width: 85%;
+ height: 30px;
+ font-weight: bold;
+ font-size: 1rem;
+ margin: 0;
+}
+.form input:hover{
+ background-color: linen;
+}
+.form button{
+ font-weight: bold;
+ width: 50%;
+ margin-top: 10px;
+ height: 50%;
+ font-size: 1em;
+ border-radius: 1em;
+}
+.form button:hover{
+ background-color: darkgray;
+}
+.footer h2{
+ text-align: center;
+ font-size: 2.1rem;
+}
+.footer{
+ text-align: center;
+ font-size: 1.2rem;
+ font-weight: semi bold;
+}
+@media (max-width: 370px){
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .heading h1{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 50px;
+    }
+    .heading img{
+        border-radius: 50%;
+        height: 300px;
+        width: 250px;
+    }
+    .heading h2{
+        font-size:medium;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form input{
+        width: 90%;
+    }
+    .form button{
+        width: 80%;
+        height: auto;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: thistle;
+    padding: 40px;
+}
+.cat-head{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 390px;
+    height: 350px;
+    background-color: gray;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.cat-left-ear{
+    position: absolute;
+    right: 270px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border-left: 90px solid transparent;
+    border-right: 91px solid transparent;
+    border-bottom: 100px solid grey;
+    transform: rotate(-50deg);
+}
+.cat-right-ear{
+    position: absolute;
+    left: 270px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border-left: 90px solid transparent;
+    border-right: 91px solid transparent;
+    border-bottom: 100px solid grey;
+    transform: rotate(50deg);
+}
+.left-inner-ear{
+    position: absolute;
+    right: -45px;
+    top: 20px;
+    width: 90px;
+    height: 50px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid darkslategray;
+}
+.right-inner-ear{
+    position: absolute;
+    right: -45px;
+    top: 20px;
+    width: 90px;
+    height: 50px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid darkslategray;
+}
+.left-eye{
+    position: absolute;
+    left: 90px;
+    top: 100px;
+    width: 50px;
+    height: 40px;
+    background-color: darkslategray;
+    border-radius: 46%;
+    transform: rotate(-30deg);
+}
+.right-eye{
+    position: absolute;
+    right: 90px;
+    top: 100px;
+    width: 50px;
+    height: 40px;
+    background-color: darkslategray;
+    border-radius: 46%;
+    transform: rotate(30deg);
+}
+.inner-left-eye{
+    position: absolute;
+    left: 15px;
+    width: 25px;
+    height: 20px;
+    background-color: white;
+    border-radius: 46%;
+}
+.inner-right-eye{
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    height: 20px;
+    background-color: white;
+    border-radius: 46%;
+}
+.cat-nose{
+    position: absolute;
+    top: 180px;
+    left: 170px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 35px solid darkslategray;
+}
+.cat-mouth{
+    width: 60px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 190%/190px 150px 0 0;
+    border-color: black transparent transparent transparent;
+}
+.cat-mouth-left{
+    position: absolute;
+    top: 2008px;
+    left: 74px;
+}
