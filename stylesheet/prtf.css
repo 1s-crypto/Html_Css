@@ -1,150 +1,146 @@
-html{
- font-size: 16px;
-}
 *{
- box-sizing: border-box;
+    box-sizing: border-box;
+    color: snow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    font-size: 16px;
 }
 body{
- background: linear-gradient(180deg, darkgray, gray);
- font-family: "Brush Script MT";
+    padding: 0;
+    background-color: darkslategrey;
+    margin: 0; 
+} 
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    gap: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkcyan;
+    color: snow;
 }
 .heading h1{
- text-align: center;
- font-size: 4.7rem;
- margin-bottom: 5rem;
- font-family: 'my font', arial;
-}
-.heading figure{
- text-align: center;
- border-radius: 0.9rem;
- margin: 0 auto;
- font-size: 1.2rem;
-}
-.heading img{
- border-radius: 20px;
- margin-top: 1.2rem;
+    margin-bottom: 0;
 }
 .heading p{
- padding: 1rem;
- font-size: 1.2rem;
- font-family: Times new roman;
+    margin-top: 0;
+    color: navajowhite;
+}
+.heading h2{
+    margin-bottom: 0;
+}
+.heading h2:hover{
+   text-decoration: underline solid;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.2fr);
+    grid-template-areas: 
+    "p p"
+    "content content";
+    gap: 0;
 }
 .projects h2{
- font-size: 2rem;
- text-decoration: underline solid;
- text-align: center;
+    grid-area: p;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
-.projects p{
- font-size: 1.3rem;
-}
-.projects h3{
- font-size: 1.5rem;
- text-decoration: underline solid;
-}
-#ol, .projects ul{
- background-color: silver;
- padding: 0.2rem;
+.projects ul{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: inherit;
+    grid-template-areas: 
+    "content content"
+    "content content"
+    "soon soon";
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 0;
 }
 .projects li{
- margin: 0.6rem;
- padding: 0.2rem;
- list-style: inside;
+    padding: 0.6rem;
+    border: 1px solid green;
+    border-radius: 10px 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+    transition: background-color 1s ease-in ;
 }
-#ol li{
- list-style-type: none;
-}
-.projects a{
- text-decoration: none;
- padding: 0.2rem;
- font-weight: bold;
-}
-.projects a:hover{
-    color: green;
-    outline: 2px solid yellow;
-}
-.projects a:visited{
-    color: red;
+.projects li:hover{
+    background-color: limegreen;
+    cursor: pointer;
 }
 #soon{
- text-decoration: none;
+    grid-area: soon;
+}
+.projects a{
+    font-size: larger;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 1s ease-in-out;
 }
 .projects a:hover{
- background-color: snow;
+    color: blue;
+    text-decoration: none;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
 }
 .form h2{
- font-size: 2rem;
- text-decoration: underline solid;
- text-align: center;
+    color: snow;
 }
 .form form{
- margin: 0 auto;
- background-color: grey;
- padding: 1.9rem;
- border-radius: 20px;
- width: 70%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
 }
-.form label{
- font-weight: bold;
- font-size: 2rem;
- text-align: right;
+label{
+    margin-top: 10px;
+    margin-left: 2px;
 }
-.form input{
- width: 85%;
- height: 30px;
- font-weight: bold;
- font-size: 1rem;
- margin: 0;
+input{
+    width: 250px;
+    height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.form input:hover{
- background-color: linen;
-}
-.form button{
- font-weight: bold;
- width: 50%;
- margin-top: 10px;
- height: 50%;
- font-size: 1em;
- border-radius: 1em;
-}
-.form button:hover{
- background-color: darkgray;
-}
-.footer h2{
- text-align: center;
- font-size: 2.1rem;
+button{
+    justify-items: stretch;
+    color: black;
+    font-size: large;
+    height: 2rem;
 }
 .footer{
- text-align: center;
- font-size: 1.2rem;
- font-weight: semi bold;
+    background-color: darkcyan;
+    color: darkgray;
+    padding: 0.5rem;
 }
-@media (max-width: 370px){
-    body{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.footer h2{
+    color: black;
+}
+.footer a{
+    color: blue;
+}
+@media (max-width: 400px) and (hover: none){
+    li:hover{
+        background-color: transparent !important;
     }
-    .heading h1{
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 50px;
-    }
-    .heading img{
-        border-radius: 50%;
-        height: 300px;
-        width: 250px;
-    }
-    .heading h2{
-        font-size:medium;
-    }
-    .form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .form input{
-        width: 90%;
-    }
-    .form button{
-        width: 80%;
-        height: auto;
-        padding: 5px;
+    a:hover{
+        color: inherit !important
     }
 }

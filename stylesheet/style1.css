@@ -1,179 +1,40 @@
-html{
- font-size: 16px;
-}
 *{
- box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+@font-face {
+    font-family: "font";
+    src: url('fonts/FiraCode-VariableFont_wght.ttf')
+    format('truetype');
 }
 body{
- padding: 1.8rem;
- font-family: Aria;
- background-color: dodgerblue;
-}
-h1{
- font-size: 4.7rem;
- font-family: brush script mt;
- font-weight: semi bold;
-}
-.container{
- border-radius: 1.25rem;
- width: 100%;
- height: auto;
- margin: 0 auto;
-}
-.container figure{
- text-align: center;
- font-weight: bold;
- font-style: italic;
- font-size: 1em;
- margin-bottom: 5px;
-}
-.container img{
- border-radius: 0.4em;
- width: 90%;
-}
-.nav-section{
- border-radius: 20px;
- margin: 20px auto;
- padding: 0.5em;
- width: 110%;
- display: flex;
- justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: dodgerblue;
+    font-family: "font";
 }
 .nav{
- background: cornflowerblue;
- padding: 0.5em;
- border-radius: 20px;
- width: 90%;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- gap: 10px;
+    background-color: deepskyblue;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 .nav a{
- padding: 0.1em;
- text-decoration: none;
- border: 0.1em solid;
- font-family: Arial;
- font-size: 1.8em;
- border-radius: 0.5em;
+    position: relative;
+    right: 10px;
+    padding: 1rem;
+    font-size: larger;
 }
-nav a:hover{
- background-color: grey;
- color: gold;
-}
-#about h2{
- font-weight: bold;
- font-size: 1.9rem;
- text-decoration: underline;
-}
-#about p{
- font-size: 1.2rem;
- font-weight: semi bold;
- color: white;
-}
-#posts h2{
- font-weight: bold;
- font-size: 1.9rem;
- text-decoration: underline;
-}
-#posts h3{
- font-weight: bold;
- font-size: 1.5rem;
-}
-#posts p{
- font-size: 1.2rem;
- font-weight: semi bold;
- color: white;
-}
-.form h2{
- font-family: Arial;
- font-style: italic;
-}
-#user{
- font-family: Arial;
- font-weight: bold;
-}
-.form input[type="text"]{
- width: 250px;
- height: 30px;
-}
-.form input[type="text"]:focus{
- outline: 1px solid green;
- background: deepskyblue;
-}
-.form input[type="text"]:hover{
- background: lime;
- cursor: pointer;
-}
-.form legend{
- font-family: Arial;
- font-weight: semi bold;
-}
-.form label{
- font-family: Arial;
- font-weight: semi bold;
- vertical-align: middle;
- margin-top: 1000px;
-}
-.form input[type="radio"]{
- appearance: none;
- width: 15px;
- height: 15px;
- background: white;
- border-radius: 5px;
- border: 1px solid black;
- vertical-align: middle;
-}
-.form input[type="radio"]:checked{
- cursor: pointer;
- background: deepskyblue;
- border: 1px solid black;
-}
-.form input[type="radio"]:hover{
- cursor: pointer;
- background: limegreen;
- border: 1px solid black;
-}
-.form input[type="radio"]:focus{
- outline: 1px solid white;
-}
-.form input[type="radio"]:checked::after{
- content: "✔";
- line-height: 1px;
- text-align: right;
-}
-.form button{
- border: 2px solid;
- background: royalblue;
- margin-left: 2px;
- font-size: 1em;
-}
-form button:hover{
- background: skyblue;
-}
-@media (max-width: 350px){
-    body{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        padding: 0;
-    }
-    h1{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 35px;
-    }
-    .nav-section{
-        display: flex;
-        position: relative;
-        right: 25px;
-        gap: 1px;
-    }
-    .nav{
-        display: flex;
-        flex-wrap: nowrap;
-        width: 80%;
-        position: sticky;
-        top: 30px;
-    }
-    .nav a{
-        font-size: 20px;
-    }
+.nav a:hover{
+    background-color: lightblue;
+    color: black;
 }
